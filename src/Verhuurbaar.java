@@ -1,0 +1,3 @@
+interface Verhuurbaar {
+    int duur();
+}
