@@ -33,6 +33,7 @@ public class Main {
             } else if (keuze >= 1 && keuze <= evenementen.size()) {
                 Evenement evenement = evenementen.get(keuze - 1);
                 evenement.toonVerhuur();
+                evenement.toonPrijs();
                 System.out.println();
                 System.out.println("Druk op Enter om terug te keren naar het menu.");
                 scanner.nextLine(); // Wacht op Enter

@@ -1,13 +1,19 @@
 class Tafels extends Item {
-    private int aantal;
+    private int uur;
 
     public Tafels(String naam, int aantal) {
         super(naam);
-        this.aantal = aantal;
+        this.uur = aantal;
     }
 
     @Override
     public int duur() {
-        return 0; // Tafels hebben geen verhuurduur
+        return 0;
+    }
+
+    @Override
+    public double berekenPrijs() {
+        // Tafels kosten 10 euro per uur
+        return uur * 10;
     }
 }

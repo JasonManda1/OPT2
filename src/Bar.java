@@ -10,4 +10,10 @@ class Bar extends Item {
     public int duur() {
         return uur;
     }
+
+    @Override
+    public double berekenPrijs() {
+        // Bar kost 50 euro per uur
+        return uur * 50;
+    }
 }

@@ -11,4 +11,10 @@ class Theaterzaal extends Item {
     public int duur() {
         return uur;
     }
+
+    @Override
+    public double berekenPrijs() {
+        // Zaal kost 200 euro per uur
+        return uur * 200;
+    }
 }

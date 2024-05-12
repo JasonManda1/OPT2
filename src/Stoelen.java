@@ -10,4 +10,10 @@ class Stoelen extends Item {
     public int duur() {
         return uur;
     }
+
+    @Override
+    public double berekenPrijs() {
+        // Stoelen kosten 5 euro per uur
+        return uur * 5;
+    }
 }

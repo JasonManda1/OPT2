@@ -1,5 +1,6 @@
 class Techniek extends Item {
     private int uur;
+    private double pricePerHour;
 
     public Techniek(String naam, int uur) {
         super(naam);
@@ -10,4 +11,11 @@ class Techniek extends Item {
     public int duur() {
         return uur;
     }
+
+    @Override
+    public double berekenPrijs() {
+        // Techniek kost 40 euro per uur
+        return uur * 40;
+    }
+
 }

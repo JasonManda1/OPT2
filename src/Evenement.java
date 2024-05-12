@@ -23,9 +23,18 @@ class Evenement {
         System.out.println();
         System.out.println("Evenement: " + naam);
         System.out.println();
-        System.out.println("Verhuurde items:");
+        System.out.println("Hier zie je alle verhuurde items:");
+        System.out.println();
         for (Item item : items) {
             System.out.println("- " + item + ": " + item.duur() + " uur");
+        }
+    }
+
+    public void toonPrijs() {
+        System.out.println();
+        System.out.println("Hier zie je in totaal de kosten voor elk verhuurde item: ");
+        for (Item item : items) {
+            System.out.println("- " + item + ": " + item.berekenPrijs() + " uur");
         }
     }
 }
