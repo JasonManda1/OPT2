@@ -24,7 +24,8 @@ public class Main {
             for (int i = 0; i < evenementen.size(); i++) {
                 System.out.println((i + 1) + ". " + evenementen.get(i).getNaam());
             }
-            System.out.println("0. Afsluiten");
+            System.out.println();
+            System.out.println("0. Programma Afsluiten");
 
             int keuze = scanner.nextInt();
             if (keuze == 0) {
