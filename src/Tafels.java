@@ -1,9 +1,9 @@
 class Tafels extends Item {
     private int uur;
 
-    public Tafels(String naam, int aantal) {
+    public Tafels(String naam, int uur) {
         super(naam);
-        this.uur = aantal;
+        this.uur = uur;
     }
 
     @Override

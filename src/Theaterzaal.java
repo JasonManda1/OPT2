@@ -1,4 +1,3 @@
-// Subklassen voor verschillende verhuurbare items
 class Theaterzaal extends Item {
     private int uur;
 
